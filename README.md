@@ -98,12 +98,19 @@ The confusion matrix revealed that while the model was generally effective, it s
 ## Recommendations 
 
 *Write on Trending Topics*: Focus on high-interest areas to attract readers.
+
 *Incorporate Feedback*: Improve writing based on reader feedback.
+
 *Prioritize High-Impact Articles*: Use categorization to streamline content review.
+
 *Update Guidelines*: Align with reader preferences and trends.
+
 *Organize Content Efficiently*: Use advanced categorization for better management.
+
 *Personalize Content Delivery*: Enhance reader engagement with personalized recommendations.
+
 *Offer Personalized Recommendations*: Enhance user experience with tailored content.
+
 *Improve Discoverability*: Help readers find relevant articles quickly.
 
 
