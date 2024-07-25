@@ -58,10 +58,20 @@ STORY: This column contains news article texts similar to the training set but l
 ### Visualizations
 
 a) Distribution of article length
+
+![image](https://github.com/olivemideva/phase_4_project/blob/main/images/Number_of_words.png).
+
 b) Distribution of categories
+
+![image](https://github.com/olivemideva/phase_4_project/blob/main/images/Category_count.png).
+
 c) Text Length vs. Category
+
+![image](https://github.com/olivemideva/phase_4_project/blob/main/images/Text_length_vs_category.png).
+
 d) Word Cloud
 
+![image](https://github.com/olivemideva/phase_4_project/blob/main/images/word_cloud.png).
 
 ## Modeliing 
 
@@ -93,6 +103,8 @@ Class 2 had the lowest F1-score at 0.93 due to a marginally lower recall. The mo
 
 Overall, the model performs well, though further improvements could enhance the precision and recall for Class 2.
 
+![image](https://github.com/olivemideva/phase_4_project/blob/main/images/Word_embeddings_confusion_matrix.png).
+
 ###  Multinomial Naive Bayes model
 
 The Multinomial Naive Bayes (MultinomialNB) model achieved an overall accuracy of 93%. 
@@ -103,9 +115,15 @@ The F1-score, which balances precision and recall, was also lower for Class 2, h
 
 The confusion matrix revealed that while the model was generally effective, it struggled with distinguishing between certain categories, particularly Technology and Entertainment, with some misclassifications noted across categories.
 
+![image](https://github.com/olivemideva/phase_4_project/blob/main/images/TF-IDF_confusion_matrix.png).
+
 ## Deployment 
 
 The deployment in this project involved saving the trained Multinomial Naive Bayes and Logistic Regression models, along with the TF-IDF vectorizer and Word2Vec model, using `pickle`. For prediction on new, unseen data, these models and vectorizers were loaded back. The test data was transformed using the TF-IDF vectorizer and Word2Vec embeddings. The loaded models were then used to make predictions on the transformed data. Finally, the predictions were saved to CSV files for further analysis or use. This process allows the trained models to be easily applied to new data, enabling real-world deployment.
+
+![image](https://github.com/olivemideva/phase_4_project/blob/main/images/deployment1.png).
+
+![image](https://github.com/olivemideva/phase_4_project/blob/main/images/deployment2.png).
 
 ## Recommendations 
 
