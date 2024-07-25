@@ -27,7 +27,7 @@ In today's digital age, news consumption has skyrocketed, and with it, the chall
 
 *Develop an Automated Categorization Model* : Build a robust machine learning model to accurately classify news articles into Politics, Technology, Entertainment, or Business.
 
-*Enhance Editorial Efficiency* : Automate article categorization to reduce the time and effort needed by editors, allowing them to concentrate on improving content quality.
+*Enhance Editorial Efficiency* : Automate article categorization to reduce the time and effort editors need, allowing them to concentrate on improving content quality.
 
 *Improve Accuracy* : Minimize misclassification rates to ensure each article is correctly reviewed by the relevant editorial team, enhancing content relevance and quality.
 
@@ -52,8 +52,16 @@ STORY: This column contains news article texts similar to the training set but l
 
 - Data analysis was done to prepare the dataset for effective model training and evaluation. 
 - The data cleaning process identified and removed 77 duplicate rows from the training data, ensuring the uniqueness of entries. 
-- The columns were then renamed and new labels were added to better reflect the data's content. Text preprocessing involved converting all text to lowercase, removing punctuation, and filtering out stopwords, followed by tokenization and lemmatization to standardize the text data. This resulted in a refined column of processed text. 
+- The columns were then renamed and new labels were added to reflect the data's content better. Text preprocessing involved converting all text to lowercase, removing punctuation, and filtering out stopwords, followed by tokenization and lemmatization to standardize the text data. This resulted in a refined column of processed text. 
 - EDA provided insights into the distribution of article lengths and category frequencies, highlighting class imbalances and the lack of strong correlation between text length and category. Visualizations were used to understand the data better, revealing patterns and the prominence of key terms in each category.
+- 
+### Visualizations
+
+a) Distribution of article length
+b) Distribution of categories
+c) Text Length vs. Category
+d) Word Cloud
+
 
 ## Modeliing 
 
@@ -61,7 +69,7 @@ STORY: This column contains news article texts similar to the training set but l
 
 We used the Word2Vec to create detailed word representations based on their usage in the text. These word vectors help capture the meaning and context of words more effectively. 
 
-The Logistic Regression model then used these word vectors to classify news articles into different categories. 
+The Logistic Regression model then used these word vectors to classify news articles into categories. 
 
 This approach achieved a high accuracy of 94%, reflecting its ability to understand and categorize text based on nuanced word meanings.
 
@@ -94,6 +102,10 @@ The classification report indicated high precision and recall for most classes, 
 The F1-score, which balances precision and recall, was also lower for Class 2, highlighting an area for potential improvement. 
 
 The confusion matrix revealed that while the model was generally effective, it struggled with distinguishing between certain categories, particularly Technology and Entertainment, with some misclassifications noted across categories.
+
+## Deployment 
+
+The deployment in this project involved saving the trained Multinomial Naive Bayes and Logistic Regression models, along with the TF-IDF vectorizer and Word2Vec model, using `pickle`. For prediction on new, unseen data, these models and vectorizers were loaded back. The test data was transformed using the TF-IDF vectorizer and Word2Vec embeddings. The loaded models were then used to make predictions on the transformed data. Finally, the predictions were saved to CSV files for further analysis or use. This process allows the trained models to be easily applied to new data, enabling real-world deployment.
 
 ## Recommendations 
 
