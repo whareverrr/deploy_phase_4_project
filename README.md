@@ -1,3 +1,5 @@
+![image](https://github.com/olivemideva/phase_4_project/blob/main/giphy.gif)
+
 # NEWSNET PUBLISHING COMPANY 
 
 ## Group Members
