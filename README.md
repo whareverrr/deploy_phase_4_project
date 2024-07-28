@@ -65,7 +65,7 @@ a) Distribution of article length
 
 b) Distribution of categories
 
-![image](https://github.com/olivemideva/phase_4_project/blob/main/Capture.PNG)
+![image](https://github.com/olivemideva/phase_4_project/blob/abf6c25b3592d110d1b9f82f34e01431884acec1/images/Category_count.png)
 
 c) Text Length vs. Category
 
